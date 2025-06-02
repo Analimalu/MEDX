@@ -1,0 +1,70 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    min-height: 100vh;
+}
+
+/* Container mais próximo do topo */
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 1rem auto 0 auto;
+}
+
+/* Card com borda mais destacada e padding reduzido */
+.card {
+    background-color: #fff;
+    padding: 1.5rem; /* aumentamos um pouco para não ficar apertado */
+    border: 2px solid #aaa;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+}
+
+/* Logo maior */
+.logo img {
+    width: 160px; /* aumentamos a largura */
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* Título maior */
+h1 {
+    font-size: 1.5rem; /* aumentamos */
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Parágrafos maiores */
+p {
+    margin-bottom: 0.5rem;
+    font-size: 1.0rem; /* aumentamos */
+    color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .card {
+        padding: 1rem;
+    }
+
+    .logo img {
+        width: 120px; /* proporcional para telas menores */
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
